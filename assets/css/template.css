@@ -1,0 +1,366 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+.container{
+    width: 990px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img{
+    width: 200px;
+    height: auto;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+nav ul,
+nav li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+nav ul{
+    display: flex;
+}
+
+nav a{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#1E90FF;
+    font-size: 16px;
+
+}
+
+nav a:hover{
+    color: #2c58dd;
+}
+
+#banner{
+    display:flex;
+    justify-content: center;
+    background-image: url('../images/fatimabanner.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 450px;   
+}
+
+.centerHeadline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner_headline h1{
+    font-size: 30px;
+    color:#808080;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+
+}
+
+#descricao, #santuario, #testemunho{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.descricaoContainer{
+    font-size: 14px;
+    text-align: justify;
+
+    
+}
+
+.imagemContainer img{
+    width: 270px;
+    height: 220px;
+    background-color: #808080;
+    
+}
+
+.santuarioImg {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.santuarioImg img{
+    padding: 8px;
+}
+
+.imagemContainer{
+    display: flex;
+    align-items: center;
+    
+}
+
+.subclassDescContainer{
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.subclassImgContainer{
+    margin-right: 20px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+
+}
+
+.subclassFooter{
+    width: 990px;
+    background-color: #6e8be0;
+
+}
+.footerPerfil img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+}
+
+.footerDescPerfil{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.logoCompartilhe{
+    margin-bottom: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    
+}
+
+.testemunho{
+    font-size: 15px;
+    border:1px solid #808080;
+    width: 900px;
+    padding: 15px;
+}
+
+.logoFooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+    
+}
+
+.logoImagem{
+    display: flex;
+}
+
+.logoImagem .active img:hover{
+    margin-top: 1px;
+}
+
+.logoImagem, .active img{
+    margin-right: 10px
+}
+
+.menuMobile{
+    display: none;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+    border:1px solid #d9dbe2;
+    border-radius: 100px;
+    padding: 8px;
+    
+}
+
+    .mm_line{
+        height: 2px;
+        width: 25px;
+        background-color: #434755;
+        margin-bottom: 3px;
+        margin-top: 3px;
+
+    }
+
+    #mensagem{
+        display: flex;
+        justify-content: center;
+
+    }
+    
+    .subclassMensagem{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .subclassMensagem h3, .container h2 {
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 17px;
+    }
+
+    textarea{
+        height: 160px;
+        width: 650px;
+        resize: none;
+        font-size: 15px;
+        outline: 0;
+        border: 1px solid #696969;
+    }
+
+    input[type=text]{
+        width:450px;
+        padding: 5px;
+        outline: 0;
+        border: 1px solid #696969;
+    }
+
+    input[type=email]{
+        width: 350px;
+        padding: 5px;
+        outline: 0;
+        border: 1px solid #696969;
+    }
+
+    button{
+        margin-top: 10px;
+        padding: 10px;
+        border: 1px solid #696969;
+        font-size: 12px;
+        
+    }
+
+    button:hover{
+        background-color: #d3cbcb;
+    }
+@media(max-width:600px) { 
+
+    nav .menuMobile:hover{
+        background-color: #55b0cc;
+
+    }
+
+    header .container{
+        flex-direction: row;
+    }
+
+    nav ul{
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+    }
+
+    header{
+        height: auto;
+    }
+
+    .logo{
+        padding-left: 10px;
+    }
+
+    #banner{
+        width: auto;
+        height: 100px;
+    }
+
+  .banner_headline h1{
+    font-size:10px;
+    padding-left:20px;
+  }
+  
+  section{
+    padding: 20px;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+  } 
+
+  .subclassImgContainer{
+    display: flex;
+    order: 1;
+  }
+
+  .imagemContainer{
+    display: flex;
+    justify-content: center;
+  }
+
+  .santuarioImg img{
+    padding-right: 10px;
+    margin-left: 10px;
+    
+  }
+  .subclassFooter{
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .footerPerfil img{
+    width: 100px;
+    height: 100px;
+  }
+
+  .footerDescPerfil{
+    font-size: 8px;
+  }
+
+  .logoCompartilhe{
+    font-size: 7px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+  }
+
+  .logoImagem img{
+    width: 13px;
+    height: 13px;
+  }
+
+  .menuMobile{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #mensagem{
+    width: 990px;
+  }
+
+  textarea{
+    width: 280px;
+  }
+
+  input[type=text],input[type=email] {
+    width: 250px;
+  }
+
+
+
+
+
+}
